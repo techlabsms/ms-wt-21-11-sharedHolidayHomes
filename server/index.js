@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const packageInfo = require('./package.json');
 const app = express();
 const apiPort = 5000;
 
@@ -9,7 +10,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello world!');
+  res.send({
+    version: packageInfo.version,
+  });
 });
 
 app.listen(apiPort, () => {
