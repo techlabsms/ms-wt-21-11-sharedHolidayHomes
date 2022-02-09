@@ -18,7 +18,7 @@ class Footer extends Component {
                     {references.map((item, logo, desc, link) => {
                         return (
                             <a class="dib mr3 pa2">
-                                <img href={item.link} src={item.logo} alt={item.desc} height="40px" witdh="40px" href={item.link}/>
+                                <a href={item.link}>< img src={item.logo} alt={item.desc} height="40px" witdh="40px"/></a>
                             </a>
                         )
                     })}
