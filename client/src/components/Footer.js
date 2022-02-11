@@ -11,11 +11,11 @@ class Footer extends Component {
             
             <div class="bottom">
                 <div class="tc">
-                    <hr width="85%" align="center" color='#a3e8d6'></hr>
+                    <hr color='#a3e8d6'/>
                     <h5 class="f4 tc light-green ma1 pa2">&copy; 2021 Shared Holiday Homes, Inc. All rights reserved</h5>
                 
 
-                    {references.map((item, logo, desc, link) => {
+                    {references.map((item) => {
                         return (
                             <a class="dib mr3 pa2">
                                 <a href={item.link}>< img src={item.logo} alt={item.desc} height="40px" witdh="40px"/></a>
