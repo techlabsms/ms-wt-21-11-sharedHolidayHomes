@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './References';
-import 'tachyons';
+//import 'tachyons';
 import { references } from './References';
 
 // Add some responsiveness with viewport and grid view settings
