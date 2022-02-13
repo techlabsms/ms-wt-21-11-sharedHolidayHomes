@@ -6,13 +6,12 @@
 }
 
 .NavbarItems {
-    /*background: linear-gradient(90deg, rgb(110, 94, 256) o%, rgba (73,63,252,1)100%);*/
     background: #222e50;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 .navbar-logo {
@@ -22,6 +21,10 @@
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
+}
+
+.navbar-logo-text {
+    padding: 5px;
 }
 
 .navbarLogoImage {
@@ -84,7 +87,7 @@
         width: 100%;
         height: auto;
         position: absolute;
-        top:100px;
+        top: 100px;
         left: -100%;
         opacity:1;
         transition: all 0.5s ease;
@@ -136,6 +139,7 @@
     .fa-times {
         color: white;
         font-size: 2rem;
+        margin: 20px;
     }
 
     .nav-links-mobile {
@@ -157,9 +161,23 @@
         transition: 250ms;
     }
 
-    Button {
+
+    /*Button {
+        display: none;
+    }*/
+
+    .navbar-logo-text {
         display: none;
     }
+
+    .navbarLogoImage {
+        display: flex;
+        margin: 0px;
+        justify-self: center;
+    }
+   
+    
+
 }
 
     
