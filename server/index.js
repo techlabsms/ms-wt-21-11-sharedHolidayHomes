@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const packageInfo = require('./package.json');
-const mockData = require('./mock.json');
+const mockData = require('./mock.housecollection.json');
 const app = express();
 const apiPort = 5000;
 

@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "priceInEuro": {
+      "type": "number"
+    },
+    "areaInSqM": {
+      "type": "number"
+    },
+    "roomCount": {
+      "type": "number"
+    },
+    "totalShares": {
+      "type": "number"
+    },
+    "availableShares": {
+      "type": "number"
+    },
+    "specials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "houseNumber": {
+          "type": "number"
+        },
+        "zipCode": {
+          "type": "string"
+        },
+        "locality": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "priceInEuro",
+    "areaInSqM",
+    "roomCount",
+    "totalShares",
+    "availableShares",
+    "specials",
+    "images",
+    "address"
+  ]
+}

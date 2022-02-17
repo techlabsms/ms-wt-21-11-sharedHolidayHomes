@@ -1,0 +1,12 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/*.house.json"],
+      "url": "./server/schemas/house.schema.json"
+    },
+    {
+      "fileMatch": ["/*.housecollection.json"],
+      "url": "./server/schemas/housecollection.schema.json"
+    }
+  ]
+}
