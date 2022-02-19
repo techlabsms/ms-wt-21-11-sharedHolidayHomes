@@ -2,9 +2,21 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const packageInfo = require('./package.json');
-const mockData = require('./mock.json');
+const { MongoClient, ServerApiVersion } = require('mongodb');
 const app = express();
 const apiPort = 5000;
+const uri =
+  'mongodb+srv://mongoarmin:mDQp1sADRbinJ5kv@sharedholidayhomesclust.nlkm6.mongodb.net/shared-holiday-homes-db?retryWrites=true&w=majority';
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1,
+});
+client.connect((err) => {
+  // const collection = client.db().collection('sandbox');
+  // console.log(collection);
+  // client.close();
+});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
@@ -17,7 +29,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/houses', (req, res) => {
-  res.send(mockData);
+  const collection = client.db().collection('sandbox');
+  collection.find({}).toArray(function (err, result) {
+    if (err) {
+      res.status(400).send('Error fetching houses!');
+    } else {
+      res.json(result);
+    }
+  });
 });
 
 app.listen(apiPort, () => {
