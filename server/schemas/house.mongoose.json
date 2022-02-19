@@ -1,0 +1,40 @@
+{
+  "name": {
+    "type": "String"
+  },
+  "priceInEuro": {
+    "type": "Number"
+  },
+  "areaInSqM": {
+    "type": "Number"
+  },
+  "roomCount": {
+    "type": "Number"
+  },
+  "totalShares": {
+    "type": "Number"
+  },
+  "availableShares": {
+    "type": "Number"
+  },
+  "specials": {
+    "type": ["String"]
+  },
+  "images": {
+    "type": ["String"]
+  },
+  "address": {
+    "street": {
+      "type": "String"
+    },
+    "houseNumber": {
+      "type": "Number"
+    },
+    "zipCode": {
+      "type": "String"
+    },
+    "locality": {
+      "type": "String"
+    }
+  }
+}
