@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { MenuItems} from "./MenuItems";
-import { Button } from '../Button'
+import { MenuItems} from "./NavbarComponents/MenuItems";
+//import { Button } from '../Button'
+import Searchbar from './NavbarComponents/Searchbar';
 import './Navbar.css';
+import HouseData from "./NavbarComponents/mock.json";
+
 
 
 class Navbar extends Component {
@@ -14,7 +17,10 @@ class Navbar extends Component {
     render () {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo"><img className="navbarLogoImage" src='/Logo.jpg' alt='logo'></img>Shared Holiday Homes</h1>
+                <div className="navbar-logo">
+                    <img className="navbarLogoImage" src='/Logo.jpg' alt='logo'></img> 
+                    <h1 className="navbar-logo-text">Shared Holiday Homes</h1>
+                </div>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
@@ -29,7 +35,7 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button>Sign Up</Button>
+                <Searchbar placeholder="Search..." data={HouseData}/>
             </nav>
         )
     }
