@@ -1,9 +1,9 @@
 
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { ReactDOM } from 'react'; 
 import Footer from './components/Footer.js';
 import Content from './content';
+import Card from './components/Favorites';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
     <div>
       <Navbar/>
       <Content/>
+      <Card/>
       <Footer/>
     </div> 
   )
