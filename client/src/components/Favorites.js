@@ -13,8 +13,8 @@ class Card extends Component{
 
                     {objects.map((item) => {
                         return (
-                            <div className="tc bg-moon-gray dib br3 pa3 ma2 grow bw2 shadow-5">
-                                <a href=''><img src={item.picture} alt={item.alt} height="197px" witdh="197px"/></a>
+                            <div className="gallery tc bg-moon-gray dib br3 pa3 ma2 grow bw2 shadow-5">
+                                <a href=''><img src={item.picture} alt={item.alt} height="180px" witdh="180px"/></a>
                                 <div className="ma1 pa2">
                                     <h2>{item.name}</h2>
                                     <h4>{item.location}</h4>
@@ -22,9 +22,12 @@ class Card extends Component{
                             </div>   
                             )
                     })}
-                <button class="insp">Gib mir mehr Inspiration!</button>
+                    <div> 
+                        <form action="www.google.de">
+                        <button class="insp grow tc hover-white" type='submit'>Gib mir mehr Inspiration!</button>
+                        </form>
+                    </div>
                 </div>
-                
             </div>
         )
     }
