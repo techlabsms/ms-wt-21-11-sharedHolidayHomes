@@ -1,19 +1,23 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
+
+import Footer from './components/Footer.js';
+import Content from './content';
+import Card from './components/Favorites';
+
 import { ReactDOM } from 'react'; 
 import Search from './components/search/Search';
-import Footer from './Footer.js';
 
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <Search />
-      <Footer />
-    </div>
-    
-  );
-};
-    
-export default App;
+      <Content/>
+      <Card/>
+      <Footer/>
+    </div> 
+  )
+}
+export default App

@@ -1,0 +1,10 @@
+.beispiel{
+   color: #a3e8d6;
+   position: relative;
+   width: 90%;
+   margin: 20px;
+   padding: 40px;
+}
+p {
+    color: grey;
+}
