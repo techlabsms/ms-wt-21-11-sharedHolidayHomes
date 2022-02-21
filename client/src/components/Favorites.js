@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import { objects } from "./Objects";
+import './favorite.css';
 
 
 class Card extends Component{
     render(){
         return (
-            <div class="bottom">
-                <div class="tc ma4 pa3">
+            <div>
+                <div class="tc ma2 pa3">
                     <hr color='#a3e8d6' />
                     <h1 className="light-green pa3">Unsere Empfehlungen für Dich!</h1>
 
@@ -18,10 +19,12 @@ class Card extends Component{
                                     <h2>{item.name}</h2>
                                     <h4>{item.location}</h4>
                                 </div>
-                            </div>  
-                        )
+                            </div>   
+                            )
                     })}
+                <button class="insp">Gib mir mehr Inspiration!</button>
                 </div>
+                
             </div>
         )
     }

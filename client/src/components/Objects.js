@@ -2,7 +2,7 @@ export const objects = [
     {
         id: 1, 
         name: 'Nice House at the beach',
-        picture: 'https://www.dancenter.de/wimg/z=1-4/id=38960-708985-320w200.jpg',
+        picture: 'https://www.my-sylt-urlaub.de/typo3temp/GB/c2b314a94f.jpg',
         location: 'Denmark',
         alt: 'photo denmark',
         
@@ -19,7 +19,7 @@ export const objects = [
     {
         id: 3, 
         name: 'Luxury Pool-House',
-        picture: 'https://www.dertour.de/dam/jcr:12e1133d-01bb-43c8-ba17-152a532b3858/ferienhaus-pool-g-1291364942.jpg',
+        picture: 'https://hideaways.imgix.net/spanien/ferienhaus-villa-mit-pool/spanien-mallorca-finca-julia-01.jpg',
         location: 'Spain',
         alt: 'photo spain',
     }
