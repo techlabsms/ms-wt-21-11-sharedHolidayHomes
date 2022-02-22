@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-body {
+    display: block;
+    min-height: 100vh;
+    padding: 30px;
+    background-image : url("https://cdn.pixabay.com/photo/2017/06/02/12/57/swimming-pool-2366277_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.searchcomponents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
