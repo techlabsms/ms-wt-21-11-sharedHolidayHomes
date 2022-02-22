@@ -132,3 +132,27 @@ a:hover {
 #clearBtn {
     cursor: pointer;
 }
+
+.searchButton {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: crimson;
+    color: white;
+}
+
+.searchButton:hover {
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    background: lightcoral;
+    color: white;
+    transition: 250ms;
+}

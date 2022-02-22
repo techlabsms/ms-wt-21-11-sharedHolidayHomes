@@ -1,6 +1,7 @@
 import "./Search.css"
 import PriceRange from "./searchComponents/PriceRange";
 import Place from "./searchComponents/Place";
+import SearchButton from "./searchComponents/SearchButton";
 import HouseData from "./mock.json";
 
 function Search() {
@@ -13,6 +14,7 @@ function Search() {
 
               <div className="searchcomponents"><PriceRange /></div>
               <div className="searchcomponents"><Place placeholder="Everywhere" data={HouseData}/> </div>
+              <SearchButton />
         </div>
       </div>
     );
