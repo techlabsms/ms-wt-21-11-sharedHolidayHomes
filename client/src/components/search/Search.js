@@ -15,6 +15,7 @@ function Search() {
               <div className="searchcomponents"><PriceRange /></div>
               <div className="searchcomponents"><Place placeholder="Everywhere" data={HouseData}/> </div>
               <SearchButton />
+              <br />
         </div>
       </div>
     );

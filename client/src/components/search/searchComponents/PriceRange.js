@@ -1,4 +1,5 @@
-import "./SearchComponents.css"
+import "./SearchComponents.css";
+
 
 function PriceRange() {
     return (

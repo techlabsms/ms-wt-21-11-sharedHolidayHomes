@@ -4,7 +4,7 @@ function SearchButton() {
     return (
         <div className="body">
            <div> 
-                <button className="searchButton" type='submit'>Search now</button>
+                <button className="searchButton grow" type='submit'>Search now</button>
              </div>
         </div>
     );
