@@ -23,7 +23,7 @@ const Card =() => {
                     {houses.map((item) => {
                         return (
                             <div className="gallery tc bg-light-gray dib br3 pa3 ma2 grow bw2 shadow-5">
-                                <a href=''><img src={item.image[0]} height="180px" witdh="180px"/></a>
+                                <a href=''><img src={item.images[0]} height="180px" witdh="180px"/></a>
                                 <div className="ma1 pa2">
                                     <h2>{item.name}</h2>
                                     <h4>{item.address.locality}</h4>
