@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems} from "./NavbarComponents/MenuItems";
-//import { Button } from '../Button'
+/*import { Button } from '../Button';*/
 import Searchbar from './NavbarComponents/Searchbar';
 import './Navbar.css';
 import HouseData from "./NavbarComponents/mock.json";
@@ -19,7 +19,6 @@ class Navbar extends Component {
             <nav className="NavbarItems">
                 <div className="navbar-logo">
                     <img className="navbarLogoImage" src='/Logo.jpg' alt='logo'></img> 
-                    <h1 className="navbar-logo-text">Shared Holiday Homes</h1>
                 </div>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>

@@ -13,7 +13,7 @@ function App() {
     <div>
       <Navbar/>
       <Search />
-      <Card/>
+      <Card />
       <Footer/>
     </div> 
   )

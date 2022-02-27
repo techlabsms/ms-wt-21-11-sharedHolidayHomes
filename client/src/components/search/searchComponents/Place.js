@@ -28,6 +28,7 @@ function Place({ placeholder, data }) {
                             <input 
                             type="text" 
                             placeholder={placeholder}
+                            value={filteredData}
                             onChange={handleFilter}
                             />
                             <div className="dropdownIcon">
@@ -37,11 +38,12 @@ function Place({ placeholder, data }) {
                 </div>
                 {filteredData.length != 0 && (
                 <div className="dataEnter">
-                    {filteredData.slice(0, 15).map((value, key) => {
+                    {filteredData.slice(0, 15).map((value, key) => { 
                         return <a className="locationItem" href={value.images[0]} target="_blank"> 
                         <p> {value.address.locality}
                         </p>
-                        </a>;
+                        </a>
+                      
                     })}
                 </div> 
                 )}

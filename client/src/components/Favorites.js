@@ -8,8 +8,8 @@ import axios from "axios";
 const Card =() => { 
     const [houses, setHouses] = useState([]);
     useEffect(() => {
-    const fetchHouses = async () => {
-        const result = await axios ({method:"get", url:"http://localhost:5000/houses"})
+        const fetchHouses = async () => {
+           const result = await axios ({method:"get", url:"http://localhost:5000/houses"})
         setHouses(result.data)
     }
     fetchHouses()
