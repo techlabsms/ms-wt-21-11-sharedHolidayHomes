@@ -17,7 +17,7 @@ function PriceRange() {
                         -
                     </div>
                     <div className="field">
-                        <input type="number" className="input-max" defaultValue="1000000"> 
+                        <input type="number" className="input-max" defaultValue="100000" > 
                         </input>
                         <p>€</p>
                     </div>

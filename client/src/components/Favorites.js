@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+/*import React, {Component} from 'react';
 import { objects } from "./Objects";
 import './favorite.css';
 // react hooks
@@ -8,8 +8,8 @@ import axios from "axios";
 const Card =() => { 
     const [houses, setHouses] = useState([]);
     useEffect(() => {
-    const fetchHouses = async () => {
-        const result = await axios ({method:"get", url:"http://localhost:5000/houses"})
+        const fetchHouses = async () => {
+           const result = await axios ({method:"get", url:"http://localhost:5000/houses"})
         setHouses(result.data)
     }
     fetchHouses()
@@ -43,4 +43,4 @@ const Card =() => {
 }
         
 
-export default Card
+export default Card*/
