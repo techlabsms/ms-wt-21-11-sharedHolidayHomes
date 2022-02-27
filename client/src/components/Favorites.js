@@ -1,4 +1,4 @@
-/*import React, {Component} from 'react';
+import React, {Component} from 'react';
 import { objects } from "./Objects";
 import './favorite.css';
 // react hooks
@@ -43,4 +43,4 @@ const Card =() => {
 }
         
 
-export default Card*/
+export default Card

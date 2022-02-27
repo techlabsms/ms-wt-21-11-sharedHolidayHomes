@@ -13,6 +13,7 @@ function App() {
     <div>
       <Navbar/>
       <Search />
+      <Card />
       <Footer/>
     </div> 
   )
