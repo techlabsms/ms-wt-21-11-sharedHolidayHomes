@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { objects } from "./Objects";
+import { Link } from "react-router-dom";
 import './favorite.css';
 // react hooks
 import {useEffect, useState} from "react";
@@ -23,7 +23,7 @@ const Card =() => {
                     {houses.map((item) => {
                         return (
                             <div className="gallery tc bg-light-gray dib br3 pa3 ma2 grow bw2 shadow-5">
-                                <a href=''><img src={item.images[0]} height="180px" witdh="180px"/></a>
+                                <Link to="ObjDetail"><img src={item.images[0]} height="180px" witdh="180px"/></Link>
                                 <div className="ma1 pa2">
                                     <h2>{item.name}</h2>
                                     <h4>{item.address.locality}</h4>

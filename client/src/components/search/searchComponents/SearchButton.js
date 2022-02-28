@@ -1,11 +1,12 @@
-import "./SearchComponents.css"
+import "./SearchComponents.css"; 
+import { Link } from "react-router-dom";
 
 function SearchButton() {
     return (
         <div className="body">
            <div> 
-                <button className="searchButton grow" type='submit'>Search now</button>
-             </div>
+                <Link to="Overview"><button className="searchButton grow" type='submit'>Search</button></Link>
+            </div>
         </div>
     );
   }
