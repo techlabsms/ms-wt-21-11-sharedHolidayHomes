@@ -29,6 +29,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/houses', (req, res) => {
+  const minPrice = parseInt(req.query.minPrice ?? -1);
+  const maxPrice = parseInt(req.query.maxPrice ?? -1);
+  if (minPrice < 0 || maxPrice <= 0 || minPrice > maxPrice) {
+    res.status(400).send('Invalid minimum or maximum price parameters');
+    return;
+  }
+  //implement user dates for budget and MongoDB here!
+  //implement user dates place here
   const collection = client.db().collection('sandbox');
   collection.find({}).toArray(function (err, result) {
     if (err) {
