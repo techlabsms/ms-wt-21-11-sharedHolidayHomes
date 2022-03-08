@@ -1,16 +1,23 @@
 import { useState} from "react";
 import "./SearchComponents.css";
-import Place from "./Place";
-import HouseData from "../mock.json";
 
-const SearchComponents = ({placeholder, data}) => {
+
+const SearchComponents = () => {
     const [minPrice, setMinPrice] = useState ('');
     const [maxPrice, setMaxPrice] = useState ('');
-    
+    const [place, setPlace] = useState ('everywhere');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const search = {minPrice, maxPrice, place};
+
+        console.log(search);
+
+    }
 
     return (
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="body">
                     <div className="wrapper">
         
@@ -44,8 +51,28 @@ const SearchComponents = ({placeholder, data}) => {
                     </div>
                     </div>
                 </div>
+                    <div className="wrapper">
+                    <div className="header">
+                            <h2> Place?</h2>
+                    </div>
+                    <div className="location-input"> 
+                        <div className="field">
+                            <div className="locationResult"> 
+                                <select
+                                    value={place}
+                                    onChange={(event) => setPlace(event.target.value)}>
+                                    <option value="everywhere">Everywhere</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="netherlands">The Netherlands</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="sweden">Sweden</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
             
-            <Place placeholder="Everywhere" data={HouseData}/>
 
             <div className="body">
                 <div> 
@@ -53,9 +80,6 @@ const SearchComponents = ({placeholder, data}) => {
                 </div>
             </div>
 
-                
-                <p> {minPrice}</p>
-                <p> {maxPrice}</p>
             </form>
         </div>
     )} 
