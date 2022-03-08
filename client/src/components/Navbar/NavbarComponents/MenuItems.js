@@ -1,6 +1,11 @@
 export const MenuItems = [
     {
-        title: 'Offer a house',
+        title: 'About Us',
+        url: '#',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Make an Offer',
         url: '#',
         cName: 'nav-links'
     },
