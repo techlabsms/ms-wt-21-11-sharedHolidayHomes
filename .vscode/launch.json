@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< Updated upstream
             "name": "Launch Edge",
             "request": "launch",
             "type": "pwa-msedge",
@@ -15,6 +16,11 @@
             "type": "pwa-msedge",
             "request": "launch",
             "name": "Launch Edge against localhost",
+=======
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+>>>>>>> Stashed changes
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }
