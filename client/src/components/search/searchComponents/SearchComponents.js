@@ -1,8 +1,12 @@
-import { useState} from "react";
+import {useEffect, useState} from "react";
 import "./SearchComponents.css";
+import axios from "axios";
 
 
 const SearchComponents = () => {
+    const [searchPL, setSearchPL] = useState([]);
+  
+
     const [minPrice, setMinPrice] = useState ('');
     const [maxPrice, setMaxPrice] = useState ('');
     const [place, setPlace] = useState ('everywhere');
@@ -10,9 +14,12 @@ const SearchComponents = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const search = {minPrice, maxPrice, place};
+       
+        const postSearchPL = async () => {
+            const result = await axios.get ("http://localhost:5000/houses", {params:{minPrice, maxPrice, place}})
+            setSearchPL(result.data)}
 
-        console.log(search);
-
+            postSearchPL()
     }
 
     return (
