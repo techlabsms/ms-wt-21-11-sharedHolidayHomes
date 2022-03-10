@@ -110,7 +110,7 @@ input[type="number"]::-webkit-inner-spin-button{
 }
 
 select{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-family: 'Lato', sans-serif;
     color: black;
 }
