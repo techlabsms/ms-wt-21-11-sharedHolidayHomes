@@ -4,7 +4,10 @@
   "description": "server code for shared holiday homes project",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,142 @@
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+   
+}
+
+.wrapper {
+    width: 800px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px;
+}
+
+
+.header {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header h2 {
+    margin-bottom: 15px;
+}
+
+.search-input {
+    width: 100%;
+    display: flex;
+    
+}
+
+.search-input .field{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+    color: grey;
+    -moz-appearance: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.field select {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+    color: grey;
+    -moz-appearance: none;}
+
+.search-input .separator {
+    width: 100px;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 12px;
+}
+
+
+.field p {
+    font-size: 1.2rem;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.location-input {
+    width: 100%;
+    display: flex;
+    margin: 5px 0;
+}
+
+.location-input .field{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.locationResult {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: transparent;
+    -moz-appearance: none;
+}
+
+select{
+    font-size: 1.0rem;
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+
+
+.searchButton {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: #FB7267;
+    color: white;
+}
+
+.searchButton:hover {
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    background: lightcoral;
+    color: white;
+    transition: 250ms;
+}
