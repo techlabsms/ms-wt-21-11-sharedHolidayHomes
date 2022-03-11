@@ -1,20 +1,22 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-
-import Footer from './components/Footer.js';
-import Card from './components/Favorites';
-
-import { ReactDOM } from 'react'; 
-import Search from './components/search/Search';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/HomeComponent";
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Search />
-      <Card />
-      <Footer/>
+      <Router>
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route exact path="/" element={ <Home/> } />
+          </Routes>
+        </div>
+        <Footer />
+      </Router> 
     </div> 
   )
 }
