@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: block;
+    min-height: 250px;
+    padding: 70px 0;
+    background-image: url("https://www.mallorcaagent.com/wp-content/uploads/2020/07/Sea-view-Pool-1400x600.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
