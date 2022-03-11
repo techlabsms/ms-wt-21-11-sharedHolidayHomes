@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import "./SearchComponents.css";
 import axios from "axios";
+import {Link} from 'react-router-dom';
 
 
 const SearchComponents = () => {
@@ -83,7 +84,9 @@ const SearchComponents = () => {
 
             <div className="body">
                 <div> 
+                    <Link to="/searchresults">
                     <button className="searchButton grow" type='submit'>Search now</button>
+                    </Link>
                 </div>
             </div>
 
