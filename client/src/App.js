@@ -6,6 +6,7 @@ import About from './components/About.js';
 import Offer from './components/Offer.js';
 import Login from './components/Login.js';
 import Overview from './components/Overview.js';
+import { houseData } from './components/SearchResults/houseData';
 import { ReactDOM } from 'react'; 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -31,7 +32,7 @@ function App() {
               <Login />
             </Route>
             <Route path="/searchresults">
-              <Overview />
+              <Overview houseData={houseData}/>
             </Route>
           </Switch>
         </div>

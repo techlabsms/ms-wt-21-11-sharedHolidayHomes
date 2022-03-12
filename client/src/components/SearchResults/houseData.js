@@ -1,4 +1,4 @@
-[
+export const houseData = [
     {
       "name": "house1",
       "priceInEuro": 450000,
