@@ -1,11 +1,21 @@
+import React from "react";
 import "./SearchResults/SearchResults.css";
+import { houseData } from "./SearchResults/houseData";
+import ListedHouses from "./SearchResults/ListedHouses";
 
-function Overview() {
+
+
+
+const Overview=() => {
     return (
-      <div className="header">
-        <h1> Our selection to find your Shared Holiday Home</h1>
+      <div className="houses">
+        <div className="header">
+          <h1> Our selection to find your Shared Holiday Home</h1>
+        </div>
+
+        <ListedHouses houseData={houseData} />
       </div>
-    );
+    )
   }
   
   export default Overview;

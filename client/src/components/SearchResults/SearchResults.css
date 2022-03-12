@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 .header {
     display: block;
     min-height: 250px;
@@ -14,3 +15,43 @@
     color: white;
     text-align: center;
 }
+
+.card {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.text-wrapper {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    font-size: 1.0rem;
+    justify-content: center;
+}
+
+.text {
+    padding: 0 5px;
+    
+}
+
+.match {
+    display: flex;
+}
+
+.space {
+    padding: 0 5px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #353c42;
+    color: white;
+    font-weight: bold;
+}
+
