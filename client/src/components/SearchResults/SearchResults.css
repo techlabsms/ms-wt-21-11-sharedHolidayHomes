@@ -3,8 +3,12 @@
     padding: 0;
 }
 
+.image {
+    height: 30vh;
 
-.header {
+}
+
+.header-overview {
     display: block;
     min-height: 250px;
     padding: 70px 0;
@@ -23,6 +27,12 @@
     background-color: whitesmoke;
 }
 
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .text-wrapper {
     display: flex;
     padding: 5px;
@@ -30,11 +40,16 @@
     align-items: center;
     font-size: 1.0rem;
     justify-content: center;
+    height: 5vh;
 }
 
 .text {
     padding: 0 5px;
     
+}
+
+.house-title {
+    height: 7vh;
 }
 
 .match {
