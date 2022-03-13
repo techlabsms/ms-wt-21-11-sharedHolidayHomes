@@ -9,7 +9,7 @@ import ListedHouses from "./SearchResults/ListedHouses";
 const Overview=() => {
     return (
       <div className="houses">
-        <div className="header">
+        <div className="header-overview">
           <h1> Our selection to find your Shared Holiday Home</h1>
         </div>
 

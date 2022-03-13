@@ -3,11 +3,11 @@ import "./SearchResults.css";
 
 const ListedHouses = ({houseData}) => {
         return (     
-            <div>
+            <div className="results">
                 {houseData.map((houseData, i) => {
                         return (
                             <div className="card">
-                                    <img alt="houses" src={houseData.images[0]} />
+                                    <img className="image" alt="houses" src={houseData.images[0]} />
                                     <div>
                                         <div className="text-wrapper">
                                         <p className="text city">{houseData.address.locality}</p>
