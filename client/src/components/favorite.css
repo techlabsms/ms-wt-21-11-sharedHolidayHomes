@@ -12,8 +12,11 @@
     margin-bottom: 30px;
     margin-left: 1%;
     cursor: pointer;
+    max-width: 20%;
+}
 
-    
-
+.gallery {
+    /* width: 25%; */
+    max-width: 25%;
 }
 

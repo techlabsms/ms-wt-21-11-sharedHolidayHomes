@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import './References';
 import 'tachyons';
 import { references } from './References';
+import "./Footer.css";
 
 // Add some responsiveness with viewport and grid view settings
 
 class Footer extends Component {
     render(){
         return(
-            
             <div class="bottom">
                 <div class="tc">
-                    <hr color='#a3e8d6'/>
-                    <h5 class="f4 tc light-green ma1 pa2">&copy; 2021 Shared Holiday Homes, Inc. All rights reserved</h5>
+                    <hr color='white'/>
+                    <h5 class="f4 tc white ma1 pa2">&copy; 2021 Shared Holiday Homes, Inc. All rights reserved</h5>
                 
 
                     {references.map((item) => {
@@ -27,22 +27,22 @@ class Footer extends Component {
                 <div class="Links tc">
                     <ul class="list ph3 ph5-ns pv1 ma0"> 
                         <li class="dib mr2">
-                            <a class="f4 fw4 db black link hover-light-green pa3" href="#">So funktionierts</a>
+                            <a class="f4 fw4 db white hover-black link pa3" href="#">So funktionierts</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db black link hover-light-green pa3" href="#">Über uns</a>
+                            <a class="f4 fw4 db white hover-black link pa3" href="#">Über uns</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db black link hover-light-green pa3" href="#">Kontakt</a>
+                            <a class="f4 fw4 db white hover-black link pa3" href="#">Kontakt</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db black link hover-light-green pa3" href='#'>Jobs</a>
+                            <a class="f4 fw4 db white hover-black link pa3" href='#'>Jobs</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db black link hover-light-green pa3" href='#'>Impressum</a>
+                            <a class="f4 fw4 db white hover-black link pa3" href='#'>Impressum</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db black link hover-light-green pa3" href='#'>Datenschutz</a>
+                            <a class="f4 fw4 db white hover-black link pa3" href='#'>Datenschutz</a>
                         </li>
                     </ul>
                 </div>

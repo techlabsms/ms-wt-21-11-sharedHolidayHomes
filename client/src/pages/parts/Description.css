@@ -1,0 +1,38 @@
+
+#container {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 20px ;
+    width: 100%;
+    margin-bottom: 5%;
+}
+ #a {
+     width: 50%;
+ }
+
+ #b {
+     width: 46%;
+ }
+
+ #tags {
+     display: flex;
+     flex-direction: row;
+     margin-top: 20px;
+     gap: 5px;
+ }
+
+ #tag1, #tag2, #tag3 {
+     background-color: #353C42;
+     border: none;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 5px;
+ }
+
+ #Price {
+     display: flex;
+     gap: 110px ;
+ }
+

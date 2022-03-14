@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
-import ObjDetail from './pages/ObjDetail';
-import Overview from './pages/Overview';
+import ObjDetail from './ObjDetail';
+import Overview from './Overview';
 import Homepage from './Homepage';
 
 

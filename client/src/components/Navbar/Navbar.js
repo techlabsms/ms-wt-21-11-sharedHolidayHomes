@@ -4,6 +4,7 @@ import { MenuItems} from "./NavbarComponents/MenuItems";
 import Searchbar from './NavbarComponents/Searchbar';
 import './Navbar.css';
 import HouseData from "./NavbarComponents/mock.json";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,7 +19,8 @@ class Navbar extends Component {
         return(
             <nav className="NavbarItems">
                 <div className="navbar-logo">
-                    <img className="navbarLogoImage" src='/Logo.jpg' alt='logo'></img> 
+                    {/* <img className="navbarLogoImage" src='/Logo.jpg' alt='logo'></img>  */}
+                    <Link to="/"><img src='/Logo.jpg' alt='logo' height="70px" width="70px" className='ma2'/></Link>
                 </div>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
