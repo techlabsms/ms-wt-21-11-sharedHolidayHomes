@@ -60,7 +60,7 @@ app.get('/houses', (req, res) => {
 
       if (place !== '' && place !== undefined && place !== null) {
         filteredResult = filteredResult.filter(
-          (house) => house.country.toUpperCase() === place.toUpperCase()
+          (house) => house.address.country.toUpperCase() === place.toUpperCase()
         );
       }
       res.json(filteredResult);
