@@ -31,7 +31,13 @@ app.get('/', (req, res) => {
 app.get('/houses', (req, res) => {
   const minPrice = parseInt(req.query.minPrice ?? -1);
   const maxPrice = parseInt(req.query.maxPrice ?? -1);
-  if (minPrice < 0 || maxPrice <= 0 || minPrice > maxPrice) {
+  if (
+    minPrice < 0 ||
+    maxPrice <= 0 ||
+    minPrice > maxPrice ||
+    isNaN(minPrice) ||
+    isNaN(maxPrice)
+  ) {
     res.status(400).send('Invalid minimum or maximum price parameters');
     return;
   }
