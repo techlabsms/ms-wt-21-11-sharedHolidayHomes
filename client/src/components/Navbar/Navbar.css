@@ -27,14 +27,7 @@
     padding: 5px;
 }
 
-.navbarLogoImage {
-    margin-right: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 70px;
-    height: 70px;
-}
+
 
 .fa-react {
     margin-right: 0.8rem;
@@ -67,6 +60,19 @@
     color: black;
     border-radius: 4px;
     transition: all 0.2s earse-out;
+}
+
+.navbarLogoImage {
+    margin-right: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-links:not(.navbarLogoImage):hover {
+    border: 1px solid black;
 }
 
 .nav-links-mobile {
