@@ -29,26 +29,41 @@ app.get('/', (req, res) => {
 });
 
 app.get('/houses', (req, res) => {
-  const minPrice = parseInt(req.query.minPrice ?? -1);
-  const maxPrice = parseInt(req.query.maxPrice ?? -1);
+  const minPrice = parseInt(req.query.minPrice);
+  const maxPrice = parseInt(req.query.maxPrice);
+  const place = req.query.place;
   if (
     minPrice < 0 ||
-    maxPrice <= 0 ||
-    minPrice > maxPrice ||
-    isNaN(minPrice) ||
-    isNaN(maxPrice)
+    maxPrice < 0 ||
+    maxPrice < minPrice ||
+    (isNaN(minPrice) && !isNaN(maxPrice)) ||
+    (!isNaN(minPrice) && isNaN(maxPrice))
   ) {
     res.status(400).send('Invalid minimum or maximum price parameters');
     return;
   }
-  //implement user dates for budget and MongoDB here!
-  //implement user dates place here
+
   const collection = client.db().collection('sandbox');
   collection.find({}).toArray(function (err, result) {
     if (err) {
+      console.log(err);
       res.status(400).send('Error fetching houses!');
     } else {
-      res.json(result);
+      let filteredResult = result;
+      if (!isNaN(minPrice) && !isNaN(maxPrice)) {
+        filteredResult = filteredResult.filter(
+          (house) =>
+            house.priceInEuro / house.totalShares >= minPrice &&
+            house.priceInEuro / house.totalShares <= maxPrice
+        );
+      }
+
+      if (place !== '' && place !== undefined && place !== null) {
+        filteredResult = filteredResult.filter(
+          (house) => house.country.toUpperCase() === place.toUpperCase()
+        );
+      }
+      res.json(filteredResult);
     }
   });
 });
