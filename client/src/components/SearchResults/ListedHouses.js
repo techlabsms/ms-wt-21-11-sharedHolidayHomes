@@ -27,7 +27,7 @@ const ListedHouses = ({houseData}) => {
                                         </div>
                                         <p className="pipe"> | </p>
                                         <div className="text match">
-                                            <p className="rooms"> {houseData.bathrooms} </p>
+                                            <p className="rooms"> {houseData.bathroomCount} </p>
                                             <p className="space"> bathrooms</p>
                                         </div>
                                         </div>
