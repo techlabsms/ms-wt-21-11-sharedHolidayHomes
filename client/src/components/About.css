@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px 100px;
+    margin: 15px 100px;
+    line-height: 30px;
+}
+
+.text p {
+    margin-bottom: 40px;
+}
+
+.cover {
+    max-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.quote {
+    display: flex;
+    padding: 30px 80px 50px 80px;
+    margin: 20px 40px 50px 80px;
+    font-size: 1.2rem;
+    align-items: center;
+    font-style: italic;
+}
+
+.quote1 {
+    margin-bottom: 100px; 
+}
+
+.quote2 {
+    margin-top: 100px;
+}
+
+.team  {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.team h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+}
+
+.team-wrapper img {
+    width: 250px;
+}
+
