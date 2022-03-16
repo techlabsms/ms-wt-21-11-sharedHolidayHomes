@@ -7,13 +7,13 @@ import axios from "axios";
 
 const Card =() => { 
    const [houses, setHouses] = useState([]);
-    /*useEffect(() => {
+    useEffect(() => {
         const fetchHouses = async () => {
            const result = await axios ({method:"get", url:"http://localhost:5000/houses"})
         setHouses(result.data)
-    }
-    fetchHouses()
-    })*/
+        }
+        fetchHouses() 
+    })
         return (
             <div>
                 <div class="tc ma2 pa3">
@@ -38,7 +38,7 @@ const Card =() => {
                     </div>
                 </div>
             </div>
-        )
+        ) 
     
 }
         
