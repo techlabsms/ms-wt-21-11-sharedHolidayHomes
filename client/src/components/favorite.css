@@ -16,7 +16,12 @@
 }
 
 .gallery {
-    /* width: 25%; */
-    max-width: 25%;
+    max-width: 20%;
 }
-
+.Name {
+    max-width: 240px;
+    max-width: 16ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
