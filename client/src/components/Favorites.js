@@ -13,7 +13,9 @@ const Card =() => {
         setHouses(result.data)
         }
         fetchHouses() 
-    })
+    },
+    [],
+    )
         return (
             <div>
                 <div class="tc ma2 pa3">
