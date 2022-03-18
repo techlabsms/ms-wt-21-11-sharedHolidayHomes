@@ -8,37 +8,27 @@ import Login from './components/Login.js';
 import Overview from './components/Overview.js';
 import { houseData } from './components/SearchResults/houseData';
 import { ReactDOM } from 'react'; 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"
 
 
 
 function App() {
   return (
-    <Router>
       <div>
-        <Navbar/>
         <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/offer">
-              <Offer />
-            </Route>
-            <Route path="/login">
-              <Login />
-            </Route>
-            <Route path="/searchresults">
-              <Overview houseData={houseData}/>
-            </Route>
-          </Switch>
+        <Navbar/>
+        </div>
+        <div className="content">
+          <Routes>
+            <Route exact path="/" element={ <Home/> } />
+            <Route path="/about" element={ <About/> } />
+            <Route path="/offer" element={ <Offer/> } />
+            <Route path="/login" element={ <Login/> } />
+            <Route path="/searchresults" element={ <Overview houseData={houseData}/> } />
+          </Routes>
         </div>
         <Footer/>
       </div> 
-    </Router>
   )
 }
 export default App
