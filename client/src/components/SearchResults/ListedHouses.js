@@ -1,10 +1,23 @@
 import React from "react";
 import "./SearchResults.css";
+import {useEffect, useState} from "react";
+import axios from "axios";
 
-const ListedHouses = ({houseData}) => {
+const ListedHouses = () => {
+    const [listedHouses, setListedHouses] = useState([]);
+    useEffect(() => {
+        const fetchListedHouses = async () => {
+           const result = await axios ({method:"get", url:"http://localhost:5000/houses"})
+        setListedHouses(result.data)
+        }
+        fetchListedHouses() 
+    },
+    [],
+    )
+
         return (     
             <div className="results">
-                {houseData.map((houseData, i) => {
+                {listedHouses.map((houseData) => {
                         return (
                             <div className="card">
                                     <img className="image" alt="houses" src={houseData.images[0]} />

@@ -1,6 +1,5 @@
 import React from "react";
 import "./SearchResults/SearchResults.css";
-import { houseData } from "./SearchResults/houseData";
 import ListedHouses from "./SearchResults/ListedHouses";
 
 
@@ -17,9 +16,9 @@ const Overview=() => {
           Your search results
         </div>
 
-        <ListedHouses houseData={houseData} />
+        <ListedHouses />
       </div>
     )
-  }
+}
   
   export default Overview;
