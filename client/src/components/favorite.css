@@ -12,8 +12,16 @@
     margin-bottom: 30px;
     margin-left: 1%;
     cursor: pointer;
-
-    
-
+    max-width: 20%;
 }
 
+.gallery {
+    max-width: 20%;
+}
+.Name {
+    max-width: 240px;
+    max-width: 16ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

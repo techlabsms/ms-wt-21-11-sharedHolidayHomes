@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer.js';
@@ -9,22 +10,24 @@ import Overview from './components/Overview.js';
 import { houseData } from './components/SearchResults/houseData';
 import { ReactDOM } from 'react'; 
 import { Routes, Route } from "react-router-dom"
+import ObjDetail from './ObjDetail';
 
 
 
 function App() {
   return (
       <div>
-        <div className="content">
+        <div className="App">
         <Navbar/>
         </div>
-        <div className="content">
+        <div className="App">
           <Routes>
             <Route exact path="/" element={ <Home/> } />
             <Route path="/about" element={ <About/> } />
             <Route path="/offer" element={ <Offer/> } />
             <Route path="/login" element={ <Login/> } />
             <Route path="/searchresults" element={ <Overview houseData={houseData}/> } />
+            <Route path="ObjDetail/:houseID" element={<ObjDetail/>} />
           </Routes>
         </div>
         <Footer/>
