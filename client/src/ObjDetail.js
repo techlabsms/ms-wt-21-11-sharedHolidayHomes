@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Slider from "./pages/parts/Slider/Slider";
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer"
@@ -8,6 +8,9 @@ import DescMunich from "./pages/parts/Description";
 
 
 function ObjDetail(){
+
+    let { houseID } = useParams(); 
+
     return (
         <div>
             <Navbar/>

@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage/>} />
         <Route path="Overview" element={<Overview/>} />
-        <Route path="ObjDetail" element={<ObjDetail/>} />
+        <Route path="ObjDetail/:houseID" element={<ObjDetail/>} />
       </Routes>
       {/* <Homepage /> */}
       {/* <Navbar/>
