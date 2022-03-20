@@ -9,9 +9,11 @@ const Card =() => {
    const [houses, setHouses] = useState([]);
     useEffect(() => {
         const fetchHouses = async () => {
-           const result = await axios ({method:"get", url:"http://localhost:5000/houses"})
-        setHouses(result.data)
+           const result = await axios ({method:"get", url:"http://localhost:5000/houses"}) 
+           console.log(result.data)
+        setHouses(result.data.slice(0,3))
         }
+        
         fetchHouses() 
     },
     [],
