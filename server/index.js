@@ -43,8 +43,6 @@ app.get('/houses', (req, res) => {
     return;
   }
 
-
-
   const collection = client.db().collection('sandbox');
   collection.find({}).toArray(function (err, result) {
     if (err) {
@@ -78,17 +76,14 @@ app.get('/houseDetail/:id', (req, res) => {
       res.status(400).send('Error fetching houses!');
     } else {
       let filteredResult = result;
-        filteredResult = filteredResult.filter(
-          (house) =>
-            String(house._id) === req.params.id
-        );
+      filteredResult = filteredResult.filter(
+        (house) => String(house._id) === req.params.id
+      );
       res.json(filteredResult);
     }
-  }
-  )
-}
-)
-  
+  });
+});
+
 app.listen(apiPort, () => {
   console.log(`server running on port ${apiPort}`);
 });

@@ -13,11 +13,11 @@ const ListedHouses = () => {
 
   useEffect(() => {
     const fetchListedHouses = async () => {
-      console.log(minPrice, maxPrice, place);
+      const requestPlace = place === 'everywhere' ? '' : place;
       const result = await axios({
         method: 'get',
         url: 'http://localhost:5000/houses',
-        params: { minPrice, maxPrice, place },
+        params: { minPrice, maxPrice, place: requestPlace },
       });
       setListedHouses(result.data);
     };
