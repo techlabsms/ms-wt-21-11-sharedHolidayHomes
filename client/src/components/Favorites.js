@@ -26,7 +26,7 @@ const Card =() => {
                 {houses.map((item) => {
                     return (
                         <div className="gallery tc bg-light-gray dib br3 pa3 ma2 grow bw2 shadow-5">
-                            <Link to={`/ObjDetail/${item.name}`}><img src={item.images[0]} height="180px" witdh="180px"/></Link>
+                            <Link to={`/ObjDetail/${item._id}`}><img src={item.images[0]} height="180px" witdh="180px"/></Link>
                             <div className="ma1 pa2">
                                 <h2 className='Name'>{item.name}</h2>
                                 <h4>{item.address.locality}</h4>

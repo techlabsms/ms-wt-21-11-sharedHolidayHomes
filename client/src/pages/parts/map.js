@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import './map.css';
- 
+import { useParams } from "react-router-dom";
+
+
 export class MapContainer extends Component {
-  render() {
+
+  render() {  
     return (
         <div className='map'>
             <Map google={this.props.google} zoom={14} initialCenter = {{lat: 48.16725, lng: 11.60236}}>

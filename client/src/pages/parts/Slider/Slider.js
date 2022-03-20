@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import './Slider.css'
 import BtnSlider from './BtnSlider'
-import dataSlider from './dataSlider'
+import dataSlider from './dataSlider';
+import { useParams } from "react-router-dom";
 
 
 export default function Slider() {
-
+    let { houseID } = useParams(); 
+    
     const [slideIndex, setSlideIndex] = useState(1)
 
     const nextSlide = () => {

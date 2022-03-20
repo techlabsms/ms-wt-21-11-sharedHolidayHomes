@@ -4,7 +4,6 @@ import PriceRange from "./searchComponents/PriceRange";
 import Place from "./searchComponents/Place";
 import SearchButton from "./searchComponents/SearchButton";
 import HouseData from "./mock.json";
-
 import SearchComponents from "./searchComponents/SearchComponents";
 
 
