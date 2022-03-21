@@ -30,14 +30,14 @@ const ListedHouses = () => {
       {listedHouses.map((house) => {
         return (
           <div className='card'>
-            <img className='image' alt='houses' src={house.images[0]} />
+            <Link to={`/ObjDetail/${house._id}`}><img className='image' alt='houses' src={house.images[0]} /></Link>
             <div>
               <div className='text-wrapper'>
                 <p className='text city'>{house.address.locality}</p>
                 <p className='pipe'> | </p>
                 <p className='text country'>{house.address.country}</p>
               </div>
-              <h2 className='house-title'>{house.name}</h2>
+              <Link to={`/ObjDetail/${house._id}`}> <h2 className='house-title'>{house.name}</h2> </Link>
               <div className='text-wrapper description'>
                 <div className='text match'>
                   <p className='size'>{house.areaInSqM}</p>
