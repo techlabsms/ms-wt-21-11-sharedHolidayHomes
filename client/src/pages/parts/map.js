@@ -1,4 +1,4 @@
-/*import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import './map.css';
 import { useParams } from 'react-router-dom';
@@ -25,4 +25,4 @@ export class MapContainer extends Component {
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyAoSqBI70Dp7qrsmP1ypCVboTY33gi8JWg',
-})(MapContainer);*/
+})(MapContainer);

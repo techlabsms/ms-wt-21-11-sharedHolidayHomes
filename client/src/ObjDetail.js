@@ -12,9 +12,8 @@ function ObjDetail() {
   return (
     <div>
       <Slider />
-      {/*<MapContainer />*/}
+      <MapContainer />
       <DescMunich />
-      <Footer />
     </div>
   );
 }
