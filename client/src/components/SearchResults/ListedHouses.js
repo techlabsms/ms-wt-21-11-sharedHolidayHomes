@@ -3,6 +3,7 @@ import './SearchResults.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ListedHouses = () => {
   const location = useLocation();
@@ -67,7 +68,7 @@ const ListedHouses = () => {
                 </div>
               </div>
               <div>
-                <button> More details</button>
+              <Link to={`/ObjDetail/${house._id}`}><button> More details</button></Link>
               </div>
             </div>
           </div>

@@ -7,7 +7,6 @@ import About from './components/About.js';
 import Offer from './components/Offer.js';
 import Login from './components/Login.js';
 import Overview from './components/Overview.js';
-import { houseData } from './components/SearchResults/houseData';
 import { ReactDOM } from 'react'; 
 import { Routes, Route } from "react-router-dom"
 import ObjDetail from './ObjDetail';
@@ -26,7 +25,7 @@ function App() {
             <Route path="/about" element={ <About/> } />
             <Route path="/offer" element={ <Offer/> } />
             <Route path="/login" element={ <Login/> } />
-            <Route path="/searchresults" element={ <Overview houseData={houseData}/> } />
+            <Route path="/searchresults" element={ <Overview/> } />
             <Route path="ObjDetail/:houseID" element={<ObjDetail/>} />
           </Routes>
         </div>
