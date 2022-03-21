@@ -14,7 +14,6 @@ function ObjDetail() {
       <Slider />
       <MapContainer />
       <DescMunich />
-      <Footer />
     </div>
   );
 }

@@ -69,6 +69,12 @@
     text-align: center;
     margin: 5px;
     height: 8vh;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .match {
@@ -87,5 +93,6 @@ button {
     background-color: #353c42;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
