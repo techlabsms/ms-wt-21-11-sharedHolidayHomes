@@ -17,7 +17,7 @@ class Footer extends Component {
 
                     {references.map((item) => {
                         return (
-                            <a class="dib mr3 pa2">
+                            <a class="dib mr4 pa2">
                                 <a href={item.link}>< img src={item.logo} alt={item.desc} height="40px" witdh="40px"/></a>
                             </a>
                         )
@@ -25,24 +25,21 @@ class Footer extends Component {
                 </div>
 
                 <div class="Links tc">
-                    <ul class="list ph3 ph5-ns pv1 ma0"> 
-                        <li class="dib mr2">
-                            <a class="f4 fw4 db white hover-black link pa3" href="#">So funktionierts</a>
+                    <ul class="list"> 
+                        <li class="dib">
+                            <a class="f4 fw4 db white hover-black link" href="#">How it works</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db white hover-black link pa3" href="#">Über uns</a>
+                            <a class="f4 fw4 db white hover-black link" href="#">Contact</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db white hover-black link pa3" href="#">Kontakt</a>
+                            <a class="f4 fw4 db white hover-black link" href='#'>Career</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db white hover-black link pa3" href='#'>Jobs</a>
+                            <a class="f4 fw4 db white hover-black link" href='#'>Imprint</a>
                         </li>
                         <li class="dib mr2">
-                            <a class="f4 fw4 db white hover-black link pa3" href='#'>Impressum</a>
-                        </li>
-                        <li class="dib mr2">
-                            <a class="f4 fw4 db white hover-black link pa3" href='#'>Datenschutz</a>
+                            <a class="f4 fw4 db white hover-black link" href='#'>Privacy</a>
                         </li>
                     </ul>
                 </div>

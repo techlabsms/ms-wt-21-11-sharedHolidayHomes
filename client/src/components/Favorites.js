@@ -24,7 +24,7 @@ const Card =() => {
         <div>
             <div class="tc ma2 pa3">
                 <hr color='#353C42' />
-                <h1 className="black pa3">Unsere Empfehlungen für Dich!</h1>
+                <h1 className="black pa3">Our recommandations for you!</h1>
                 {houses.map((item) => {
                     return (
                         <div className="gallery tc bg-light-gray dib br3 pa3 ma2 grow bw2 shadow-5">
@@ -39,7 +39,7 @@ const Card =() => {
                 <div> 
                     <form action="www.google.de"> 
                     {/* Link to Overview %7Bitem._id%7D  %7Bitem._id%7D*/}
-                    <button class="insp bg-light-gray grow tc" type='submit'>Gib mir mehr Inspiration!</button>
+                    <button class="insp bg-light-gray grow tc" type='submit'> Give me more inspiration!</button>
                     </form>
                 </div>
                 </div>
