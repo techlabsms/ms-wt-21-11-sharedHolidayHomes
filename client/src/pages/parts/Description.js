@@ -20,8 +20,7 @@ const Desc =() => {
     [],
     )
     return(
-        <div class="tc ma2 pa3">
-            <h1>{houseID}</h1>
+        <div>
 
         {houses.map((item) => {
                 return ( 
