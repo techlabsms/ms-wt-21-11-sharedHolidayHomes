@@ -1,20 +1,37 @@
-import React, {useState} from 'react'
 import './Slider.css'
 import BtnSlider from './BtnSlider'
 import dataSlider from './dataSlider';
 import { useParams } from "react-router-dom";
-
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 export default function Slider() {
+    
+    const [houses, setHouses] = useState([]);
     let { houseID } = useParams(); 
+     useEffect(() => {
+         
+         const fetchHouses = async () => {
+            const result = await axios ({method:"get", url:(`http://localhost:5000/houseDetail/` + houseID)})
+         const imagelist = []
+         for (var i=0; i < result.data[0].images.length; i++) {
+             imagelist.push({"id": i, "image": result.data[0].images[i]})
+         }
+         setHouses(imagelist)
+         console.log(result.data)
+         }
+         fetchHouses() 
+     },
+     [],
+     )
     
     const [slideIndex, setSlideIndex] = useState(1)
 
     const nextSlide = () => {
-        if(slideIndex !== dataSlider.length){
+        if(slideIndex !== houses.length){
             setSlideIndex(slideIndex + 1)
         } 
-        else if (slideIndex === dataSlider.length){
+        else if (slideIndex === houses.length){
             setSlideIndex(1)
         }
     }
@@ -24,7 +41,7 @@ export default function Slider() {
             setSlideIndex(slideIndex - 1)
         }
         else if (slideIndex === 1){
-            setSlideIndex(dataSlider.length)
+            setSlideIndex(houses.length)
         }
     }
 
@@ -34,7 +51,7 @@ export default function Slider() {
 
     return (
         <div className="container-slider">
-            {dataSlider.map((obj, index) => {
+            {houses.map((obj, index) => {
                 return (
                     <div
                     key={obj.id}
@@ -49,7 +66,7 @@ export default function Slider() {
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
             <div className="container-dots">
-                {Array.from({length: 6}).map((item, index) => (
+                {Array.from({length: houses.length}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
