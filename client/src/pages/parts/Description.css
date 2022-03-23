@@ -7,11 +7,12 @@
     margin-bottom: 5%;
 }
  #a {
-     width: 50%;
+     width: 48%;
  }
 
  #b {
      width: 46%;
+     margin-left: 2%;
  }
 
  #tags {
@@ -33,6 +34,41 @@
 
  #Price {
      display: flex;
-     gap: 220px ;
  }
 
+ #PriceNum {
+    margin-left: 40px;
+    max-width: 240px;
+    max-width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+
+ #attributes {
+     margin-left: 70px;
+ }
+
+#YP {
+    display: flex;
+}
+
+#YP1 {
+    margin-left: 182px;
+    font-weight: 900;
+    max-width: 6ch;
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+}
+
+.searchButton {
+    margin-top: -80px;
+}
+
+#name {
+    max-width: 43ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

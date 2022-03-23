@@ -37,10 +37,7 @@ const Card =() => {
                         )
                 })}
                 <div> 
-                    <form action="www.google.de"> 
-                    {/* Link to Overview %7Bitem._id%7D  %7Bitem._id%7D*/}
-                    <button class="insp bg-light-gray grow tc" type='submit'> Give me more inspiration!</button>
-                    </form>
+                    <Link to="searchresults"><button className="insp grow bg-light-gray" type='submit'> Give me more inspiration!</button></Link>
                 </div>
                 </div>
             </div>
