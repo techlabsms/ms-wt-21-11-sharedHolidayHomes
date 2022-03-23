@@ -85,6 +85,7 @@ const SearchComponents = () => {
             }}
             state={{ minPrice: minPrice, maxPrice: maxPrice, place: place }}
           >
+            <br />
             <button className='searchButton grow' type='submit'>
               Search now
             </button>
